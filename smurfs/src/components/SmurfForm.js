@@ -25,7 +25,7 @@ const SmurfForm = props => {
         .then(res => {
             console.log('success', res)
             setnewSmurf(res.data)
-            
+
         })
         .catch(err => console.error(err))
     }
@@ -46,20 +46,25 @@ const SmurfForm = props => {
                 onChange={handleChange} />
             <p>Age</p>
             <input  
-                type="text" 
+                type="number" 
                 name="age" 
                 placeholder=" Age (years)"
                 value={newSmurf.age} 
                 onChange={handleChange} />
             <p>Height</p>
             <input  
-                type="text" 
+                type="number" 
                 name="height" 
-                placeholder="  Height (cm)"
+                placeholder=" Height (cm)"
                 value={newSmurf.height} 
                 onChange={handleChange} />
         </div>
         <button> Smurf Me </button>
+
+        {/* <button>Edit</button>
+            <button>Delete</button>
+        */}
+
         </form>
     </div>
     );

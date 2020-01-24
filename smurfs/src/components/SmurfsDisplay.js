@@ -8,6 +8,7 @@ const SmurfsDisplay = props => {
     const dispatch = useDispatch();
         
         //display data from API
+        console.log(store)
     return (
 
         <div>
