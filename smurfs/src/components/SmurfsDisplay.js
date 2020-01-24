@@ -12,7 +12,7 @@ const SmurfsDisplay = props => {
 
         <div>
             <h2>Smurfs</h2>
-        <span>{store}</span>
+        {/* <span>{store}</span> */}
         </div>
         
     );

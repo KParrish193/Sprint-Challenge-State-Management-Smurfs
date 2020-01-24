@@ -23,7 +23,9 @@ const SmurfForm = props => {
         axios
         .post('http://localhost:3333/smurfs', newSmurf)
         .then(res => {
-            localStorage.setItem('token', res.data.token)
+            console.log('success', res)
+            setnewSmurf(res.data)
+            
         })
         .catch(err => console.error(err))
     }
@@ -45,7 +47,7 @@ const SmurfForm = props => {
             <p>Age</p>
             <input  
                 type="text" 
-                name="height" 
+                name="age" 
                 placeholder=" Age (years)"
                 value={newSmurf.age} 
                 onChange={handleChange} />
