@@ -11,6 +11,7 @@ const SmurfsDisplay = props => {
     return (
 
         <div>
+            <h2>Smurfs</h2>
         <span>{store}</span>
         </div>
         
