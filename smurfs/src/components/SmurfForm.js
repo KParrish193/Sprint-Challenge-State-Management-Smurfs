@@ -19,13 +19,12 @@ const SmurfForm = props => {
     }
 
     const onSubmit = e => {
-        e.preventDefault();
+        // e.preventDefault();
         axios
         .post('http://localhost:3333/smurfs', newSmurf)
         .then(res => {
             console.log('success', res)
             setnewSmurf(res.data)
-
         })
         .catch(err => console.error(err))
     }
@@ -56,7 +55,7 @@ const SmurfForm = props => {
                 type="number" 
                 name="height" 
                 placeholder=" Height (cm)"
-                value={newSmurf.height} 
+                value={newSmurf.height}
                 onChange={handleChange} />
         </div>
         <button> Smurf Me </button>
