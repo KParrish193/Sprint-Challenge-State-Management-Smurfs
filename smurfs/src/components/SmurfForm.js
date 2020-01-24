@@ -41,7 +41,7 @@ const SmurfForm = props => {
             <input  
                 type="text" 
                 name="name"
-                placeholder="Smurf Name"
+                placeholder=" Smurf Name"
                 value={newSmurf.name} 
                 onChange={handleChange} />
             <p>Age</p>

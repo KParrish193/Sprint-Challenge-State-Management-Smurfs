@@ -2,10 +2,10 @@ import { FETCH_TOGGLE, FETCH_SUCCESS } from '../actions/index.js';
 
 const initialState = {
     //may need to debug this later depending on data shape//
-    smurf: {name: "",
+    smurf: [{name: "",
             age: "",
             height: "",
-            id: 0,},
+            id: 0,}],
     error: "",
     isFetching: false
 };
